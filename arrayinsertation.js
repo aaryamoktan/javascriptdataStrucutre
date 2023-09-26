@@ -23,3 +23,19 @@ for( let i=0;i<array.length;i++)
 {
     console.log(array[i])
 }
+console.log("insertion at start")
+for(let i=array.length-1;i>=0;i--)
+{
+    if(i>=0)
+    {
+        array[i+1] =array[i]
+        if(i==0)
+        {
+            array[i]=element
+        }
+    }
+}
+for( let i=0;i<array.length;i++)
+{
+    console.log(array[i])
+}
