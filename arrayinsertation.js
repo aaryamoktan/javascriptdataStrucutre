@@ -8,14 +8,18 @@ for( let i=0;i<array.length;i++)
 }
 for(let i=array.length-1;i>=0;i--)
 {
-    if(i>position)
+    if(i>=position)
     {
         array[i+1]=array[i]
-    }
-    else if (i==position)
+        if (i==position)
     {
         array[i] = element;
     }
+    }
+     
 }
-
 console.log("arrya after insertion new element")
+for( let i=0;i<array.length;i++)
+{
+    console.log(array[i])
+}
