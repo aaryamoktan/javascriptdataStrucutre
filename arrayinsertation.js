@@ -1,2 +1,21 @@
 let array = [60,30,3,9,10,50];
-console.log("insertaiton done1")
+let element = 2;
+let position=3;
+console.log("element berfore insertation")
+for( let i=0;i<array.length;i++)
+{
+    console.log(array[i])
+}
+for(let i=array.length-1;i>=0;i--)
+{
+    if(i>position)
+    {
+        array[i+1]=array[i]
+    }
+    else if (i==position)
+    {
+        array[i] = element;
+    }
+}
+
+console.log("arrya after insertion new element")
