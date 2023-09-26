@@ -35,6 +35,13 @@ for(let i=array.length-1;i>=0;i--)
         }
     }
 }
+
+for( let i=0;i<array.length;i++)
+{
+    console.log(array[i])
+}
+console.log("insertion at last")
+array[array.length] = element;
 for( let i=0;i<array.length;i++)
 {
     console.log(array[i])
