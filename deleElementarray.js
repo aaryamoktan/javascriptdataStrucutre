@@ -8,7 +8,7 @@ for( let i=0; i<array2.length-1;i++)
 {
     console.log(array2[i])
 }
-console.log("delete")
+console.log("deleteal")
 function delet()
 {
     let positon3 = document.getElementById("pos").value;
