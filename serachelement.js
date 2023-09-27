@@ -2,12 +2,12 @@ let array3 = [2,4,3,5,7,1,44];
 document.write(array3)
 function search()
 {
-    let element = 44
+    let element5 = document.getElementById("ele").value
     for(let i=0;i<array3.length;i++)
     {
-        if(array3[i]===element)
+        if(array3[i] == element5)
         {
-            console.log(array3[i])
+            document.write(`Search ${element5} in position of ${i+1}`)
         }
     }
 }
