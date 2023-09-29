@@ -12,3 +12,21 @@ for(let i=0;i<array.length;i++)
     }
 }
 console.log(array)
+console.log("cyclic sort")
+let array2 = [3,4,5,6,7,8,2,1];
+let i =0;
+while( i<array2.length )
+{
+    if(array2[i] !=i+1)
+    {
+        let index = array2[i]-1;    
+        let temp = array2[i];
+        array2[i] = array2[index]
+        array2[index] =temp;
+    }
+    else{
+        i+=1;
+    }
+    
+}
+console.log(array2)
