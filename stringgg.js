@@ -21,7 +21,6 @@ for(let i = name2.length-1;i>=0;i--)
 {
     if(name2[i] == '') continue;
     if(ansstr.length>0) ansstr+=' ';
-    ansstr+=name2[i]
-    
+    ansstr+=name2[i]  
 }
 console.log(ansstr)
