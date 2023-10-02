@@ -50,7 +50,7 @@ class list{
                 counter++;
             } 
             lead.next = lead.next.next;
-            console.log(lead);  
+            console.log(lead)
         }
     }
 }
@@ -58,7 +58,9 @@ let newlist = new list(200);
 newlist.appendnode(300)
 newlist.appendnode(400)
 newlist.appendnode(500)
+newlist.appendnode(600)
+newlist.appendnode(700)
 console.log(newlist)
 newlist.traversing()
 console.log(newlist)
-newlist.removenode(4)
+newlist.removenode(1)
