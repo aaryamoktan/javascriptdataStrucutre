@@ -20,10 +20,26 @@ class list{
         this.size++;    
 
     }
+    traversing()
+    {
+        console.log("traversing in linklist")
+        let cunter = 0;
+        let currentnode = this.head;
+        console.log(this.size)
+       while(cunter<this.size)
+       {
+        console.log(currentnode)
+        currentnode=currentnode.next;
+        cunter++;
+       } 
+    }
+
 }
 let newlist = new list(200);
-console.log(newlist)
+
 newlist.appendnode(300)
 newlist.appendnode(400)
 newlist.appendnode(500)
+
+newlist.traversing()
 console.log(newlist)
