@@ -33,18 +33,33 @@ class list{
         cunter++;
        } 
     }
-    removenode()
+    removenode(index)
     {
         console.log("remove node")
+        let counter= 1;
+        let lead = this.next;
+        if(index===1)
+        {
+            this.head=lead.next;
+        }
+        else
+        {
+            while(counter<index-1)
+            {
+                lead=lead.next
+                counter++;
+            } 
+            lead.next =lead.next.next;
+            console.log(lead)
+        }
     }
 
 }
 let newlist = new list(200);
-
 newlist.appendnode(300)
 newlist.appendnode(400)
 newlist.appendnode(500)
 console.log(newlist)
 newlist.traversing()
 console.log(newlist)
-newlist.removenode()
+newlist.removenode(2)
