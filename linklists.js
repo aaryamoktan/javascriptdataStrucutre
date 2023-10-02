@@ -36,8 +36,8 @@ class list{
     removenode(index)
     {
         console.log("remove node")
-        let counter= 1;
-        let lead = this.next;
+        let counter= 0;
+        let lead = this.head;
         if(index===1)
         {
             this.head=lead.next;
@@ -49,11 +49,10 @@ class list{
                 lead=lead.next
                 counter++;
             } 
-            lead.next =lead.next.next;
-            console.log(lead)
+            lead.next = lead.next.next;
+            console.log(lead);  
         }
     }
-
 }
 let newlist = new list(200);
 newlist.appendnode(300)
@@ -62,4 +61,4 @@ newlist.appendnode(500)
 console.log(newlist)
 newlist.traversing()
 console.log(newlist)
-newlist.removenode(2)
+newlist.removenode(4)
