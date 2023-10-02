@@ -33,6 +33,10 @@ class list{
         cunter++;
        } 
     }
+    removenode()
+    {
+        console.log("remove node")
+    }
 
 }
 let newlist = new list(200);
@@ -40,6 +44,7 @@ let newlist = new list(200);
 newlist.appendnode(300)
 newlist.appendnode(400)
 newlist.appendnode(500)
-
+console.log(newlist)
 newlist.traversing()
 console.log(newlist)
+newlist.removenode()
