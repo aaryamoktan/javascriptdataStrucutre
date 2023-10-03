@@ -56,6 +56,25 @@ class list{
         node.next = newnode
         console.log(node)   
     }
+    addnode(position,newnode1)
+    {
+        console.log("Add new node at given position")
+        let newnode =this.head;
+        for(let i=1;i<position-1;i++)
+        {
+            newnode = newnode.next;
+        } 
+        let node = {
+            value:newnode1,
+            next:null
+        }
+        node.next = newnode.next.next
+        newnode.next=node
+        console.log(newnode)
+        
+        
+        
+    }
    
 }
 const listn = new list(1);
@@ -66,7 +85,5 @@ listn.append(4)
 listn.append(5)
 listn.append(6)
 
-listn.deletelastnode();
-
-listn.removenode(3)
+listn.addnode(2,10)
 
