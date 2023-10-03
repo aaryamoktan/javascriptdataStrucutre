@@ -70,12 +70,8 @@ class list{
         }
         node.next = newnode.next.next
         newnode.next=node
-        console.log(newnode)
-        
-        
-        
-    }
-   
+        console.log(newnode)   
+    } 
 }
 const listn = new list(1);
 console.log(listn)
