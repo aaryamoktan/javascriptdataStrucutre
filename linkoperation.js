@@ -49,12 +49,12 @@ class list{
         let node =this.head
        for(let i=1;i<=data-1;i++)
         {    
-            console.log(node)   
-            node=node.next;
-               
+            console.log(node)  
+            node=node.next;      
         }
-        node.next=null
-        
+        let newnode = node.next.next
+        node.next = newnode
+        console.log(node)   
     }
    
 }
@@ -63,6 +63,10 @@ console.log(listn)
 listn.append(2)
 listn.append(3)
 listn.append(4)
+listn.append(5)
+listn.append(6)
+
 listn.deletelastnode();
-listn.removenode(2)
+
+listn.removenode(3)
 
