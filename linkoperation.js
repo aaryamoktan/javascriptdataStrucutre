@@ -18,63 +18,43 @@ class list{
         this.tail=newnode;
         this.size++;
     }
-    traverse(data)
+   traverse()
+   {
+    let counter=0;
+    let node =this.head
+    while(counter<this.size)
     {
-        let counter = 0;
-        let currentnode = this.head;
-        while(counter<this.size)
-        {
-            console.log(currentnode)
-            currentnode=currentnode.next;
-            counter++;
-        }
-
+        console.log(node);
+        node=node.next;
+        counter++;
     }
-    deleten(index)
+}
+    deletelastnode()
     {
-        let det = this.head;
-        let counter = 0;
-        if(index===1)
+        console.log("deletenode from last")
+        let counter=1;
+        let node =this.head
+        while(counter<this.size-1)
         {
-            this.head = det.next;
-        }
-        else{
-            while(counter<index-1)
-            {
-                det = det.next;
-                counter++;
-            }
-            let next1 = det.next.next;
-            det.next =next1;
-        }
-    }
-    insert(data,pos)
-    {
-        let data1 = this.head;
-        let counter = 0;
-        if(pos===1)
-        {
-            data.next = this.head.next;
-            this.head.next = data;    
-        }
-        else{
-            while(counter<pos-1)
-            {
-                data1=data1.next;
-            }
-            data.next = data1.next;
-            data1.next = data;
+           
+            node=node.next;
+            counter++;   
             
         }
+        node.next = null
+       
+        for(let i=0;i<this.size;i++)
+        {
+            
+        }
+        
     }
+   
 }
 const listn = new list(1);
 console.log(listn)
 listn.append(2)
 listn.append(3)
 listn.append(4)
-console.log(listn)
-listn.traverse();
-listn.deleten(2)
-listn.traverse();
-listn.insert(7,3)
+listn.deletelastnode()
+
