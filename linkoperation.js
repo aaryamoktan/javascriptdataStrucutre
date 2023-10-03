@@ -41,12 +41,19 @@ class list{
             counter++;   
             
         }
-        node.next = null
-       
-        for(let i=0;i<this.size;i++)
-        {
-            
+        node.next = null   
+    }
+    removenode(data)
+    {
+        console.log("deletenode from given position")
+        let node =this.head
+       for(let i=1;i<=data-1;i++)
+        {    
+            console.log(node)   
+            node=node.next;
+               
         }
+        node.next=null
         
     }
    
@@ -56,5 +63,6 @@ console.log(listn)
 listn.append(2)
 listn.append(3)
 listn.append(4)
-listn.deletelastnode()
+listn.deletelastnode();
+listn.removenode(2)
 
