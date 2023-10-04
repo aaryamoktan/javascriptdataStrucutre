@@ -6,6 +6,22 @@ while(i<array.length)
     if(data == array[i])
     {
         console.log(i)
+        
     }
     i++;
+    
+}
+console.log('search in string')
+let arr  ="aaryamoktan";
+let target = 'a';
+let arr1 = [];
+let finalarra = arr.length;
+for(let i=0;i<arr.length;i++)
+{
+    if(arr[i]==target)
+    {
+        arr1 =+ [i]
+        console.log(arr1)
+    }
+    
 }
