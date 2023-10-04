@@ -5,11 +5,9 @@ while(i<array.length)
 {
     if(data == array[i])
     {
-        console.log(i)
-        
+        console.log(i)    
     }
-    i++;
-    
+    i++;  
 }
 console.log('search in string')
 let arr  ="aaryamoktan";
@@ -22,6 +20,16 @@ for(let i=0;i<arr.length;i++)
     {
         arr1 =+ [i]
         console.log(arr1)
-    }
-    
+    }  
 }
+console.log("find minimum number")
+let number = [23,8,4,55,6,7];
+let smallnumber=1000000;
+for(let i=0;i<number.length;i++)
+{
+    if(smallnumber>number[i])
+    {
+        smallnumber = number[i]
+    }
+}
+console.log(smallnumber)
