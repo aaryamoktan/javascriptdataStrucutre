@@ -43,4 +43,8 @@ for(let i=1;i<maxarr.length;i++)
         maxnumber = maxarr[i]
     }   
 }
-console.log(maxnumber)
+console.log(maxnumber);
+console.log("2d array")
+
+let arra =[["name"],["aarya"],["moktan"],
+["name"],["prathana"],["moktan"]]
