@@ -46,5 +46,6 @@ for(let i=1;i<maxarr.length;i++)
 console.log(maxnumber);
 console.log("2d array")
 
-let arra =[["name"],["aarya"],["moktan"],
-["name"],["prathana"],["moktan"]]
+let arra =[["name","aarya","moktan"],
+["name","prathana","moktan"]]
+console.log(arra)
