@@ -48,4 +48,16 @@ console.log("2d array")
 
 let arra =[["name","aarya","moktan"],
 ["name","prathana","moktan"]]
-console.log(arra)
+
+let target2 = "prathana";
+for(let i=0;i<arra[i].length;i++)
+{
+    for(let j=0 ;j<arra.length;i++)
+    {
+        if (target2 ==arra[[i][j]])
+        {
+            console.log(i,j)
+        }
+    }
+
+}
