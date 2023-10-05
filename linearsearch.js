@@ -32,4 +32,15 @@ for(let i=0;i<number.length;i++)
         smallnumber = number[i]
     }
 }
-console.log(smallnumber)
+console.log(smallnumber);
+console.log("max value");
+let maxarr = [122,323,344,444,55,111];
+let maxnumber=maxarr[0];
+for(let i=1;i<maxarr.length;i++)
+{
+    if(maxnumber<maxarr[i])
+    {
+        maxnumber = maxarr[i]
+    }   
+}
+console.log(maxnumber)
