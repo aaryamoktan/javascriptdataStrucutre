@@ -61,3 +61,21 @@ for(let i=0;i<m;i++)
         }
     }
 }
+console.log("largest element in 2d array")
+let arra2 =[[1,2,3],
+[4,8,5]]
+
+let m1 = arra.length
+let larget = 0
+for(let i=0;i<m1;i++)
+{
+    for(let j =0;j<arra[i].length;j++)
+    {
+        if(larget<arra2[i][j])
+        {
+            larget = arra2[i][j];
+           
+        }
+    }
+}
+console.log(larget)
