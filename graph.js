@@ -1,3 +1,3 @@
 console.log("graph")
 let graph = [];
-let graph2 = [];
+let graph23 = [];
