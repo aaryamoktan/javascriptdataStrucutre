@@ -1,2 +1,2 @@
 console.log("graph")
-let graph1 = [];
+let graph12 = [];
