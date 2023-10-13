@@ -1,2 +1,2 @@
 console.log("graph1")
-console.log("graph")
+console.log("graph2")
