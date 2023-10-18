@@ -79,7 +79,7 @@ listn.append(2)
 listn.append(3)
 listn.append(4)
 listn.append(5)
-listn.append(6)
+
 
 listn.addnode(2,10)
 
