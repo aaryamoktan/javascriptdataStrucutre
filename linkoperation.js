@@ -78,7 +78,7 @@ console.log(listn)
 listn.append(2)
 listn.append(3)
 listn.append(4)
-listn.append(5)
+
 
 
 listn.addnode(2,10)
