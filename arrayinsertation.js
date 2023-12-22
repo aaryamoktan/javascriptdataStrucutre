@@ -15,8 +15,7 @@ for(let i=array.length-1;i>=0;i--)
     {
         array[i] = element;
     }
-    }
-     
+}    
 }
 console.log("arrya after insertion new1 element")
 for( let i=0;i<array.length;i++)
