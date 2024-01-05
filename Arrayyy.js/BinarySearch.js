@@ -20,10 +20,23 @@
 //  }
 //}
 console.log("celling number");
-var target1 = 11;
+var target1 = 2;
 var arr1 = [1,3,4,7,9,11,13,14,15];
 let start1 = 0;
 let end1 = arr1.length-1;
 console.log(end1)
 let ans= 0 ;
-const arr3 =[]
+var arr3 = [];
+for(let i=0;i<arr1.length-1;i++)
+{
+  if(arr1[i]==target1)
+  {
+    console.log(arr1[i]);
+    break;
+  }
+  if (arr1[i]>target1)
+  {
+   arr3.push(arr1[i])
+  }
+}
+console.log(arr3[0]);
