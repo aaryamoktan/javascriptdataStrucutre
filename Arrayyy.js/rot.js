@@ -36,7 +36,7 @@ function rotater(nums,left,right)
 }
 
 console.log(rotaa([1,2,3,4,5,6,7,8,9],3))
-//remove duplicate element feom arrya;
+
 
 function duplicate(arr)
 {
