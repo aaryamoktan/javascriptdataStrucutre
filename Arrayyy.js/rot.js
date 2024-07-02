@@ -52,3 +52,18 @@ function duplicate(arr)
         return arr;
 }
 console.log(duplicate([1,1,1,2,2,3,3,4,5,5,6,7,66]))
+//using two pointer
+function duplicate1(arr)
+{
+    let  i =0;
+    for(let j=0;j<arr.length;j++)
+        {
+            if(arr[i]!==arr[j])
+                {
+                    i++;
+                    arr[i]=arr[j]
+                }
+        }
+     return i+1;   
+}
+console.log(duplicate1([1,1,1,3,3,4,5,5,6,7]))
