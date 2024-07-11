@@ -1,2 +1,2 @@
-const name1 = "my name is aarya moktan ,iam from sarlhai nepal"
+const name1 = "nepal"
 console.log(name1.length)
